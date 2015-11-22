@@ -1,0 +1,154 @@
+body.custom-background {
+    background-color: #f4f6f8;
+}
+a:hover{
+    text-decoration: none;
+}
+
+nav.navbar-white{
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    border:none;
+
+}
+.header-container{
+     max-width: 1000px;
+     zoom:1;
+     margin-right: auto;
+     margin-left: auto;
+}
+.navbar-white .navbar-toggle {
+    border-color: #ddd;
+    padding: 5px 10px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.navbar-nav>.active{
+	background-color: #e7e7e7;
+}
+.navbar-nav{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.nav-menu-name{
+    color: #3e82c1;
+}
+.dropdown-menu>li>a{
+	color:#428bca;
+}
+
+.alert-required{
+	color:#d58512;
+}
+
+@media(min-width: 768px){
+  .nav-user-name{
+        width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        display: -moz-deck;
+    }  
+    .nav-dropdown-list>li>a{
+        width: 150px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display:block;
+        padding: 10px 20px;
+    }
+}
+
+@media(max-width: 768px){
+    .navbar-nav .open .dropdown-menu>li>a{
+        padding:10px 15px 10px 25px
+    }
+}
+
+.nav-dropdown-icon{
+   margin: 10px 0;
+}
+.nav-dropdown-list{
+    min-width: 0;
+    padding: 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+.content-container{
+    max-width: 1000px;
+     margin-right: auto;
+     margin-left: auto;
+     padding-right: 15px;
+     padding-left: 15px;
+}
+
+
+.post-list-group>.post-list-item{
+    margin-bottom: 0px;
+    border: none;
+    border-bottom: 1px dashed #ccc;
+    padding:0;
+    margin-bottom: 10px;
+    position:static;
+}
+.post-body{
+    margin: 10px auto;
+}
+.meta{
+    color: #ABABAB;
+    
+}
+.meta a {
+    text-decoration: none;
+    color: #ABABAB;
+}
+.meta a:hover{
+    color:#428bca
+}
+
+.meta i{
+    margin-left: 5px;
+}
+.meta i:first-child{
+    margin-left: 0;
+}
+
+/*
+.panel-body {
+    padding: 15px 25px;
+}
+.post-body {
+    padding: 0 9px;
+}
+*/
+
+.post-body img {
+    max-width: 100%;
+    height:auto;
+
+
+}
+.comment-header{
+    border-bottom: 1px dashed #ccc;
+}
+.comment-list{
+    border-bottom: 1px dashed #ccc;
+    margin-top: 10px;
+}
+
+.comment-list-container{
+    margin-bottom: 20px;
+}
+.comment-button{
+    margin-top: 10px;
+}
+
+.tags-container a{
+    color: white;
+    font-size: 11px;
+}
+.tags-container .label{
+}

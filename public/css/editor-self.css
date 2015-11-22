@@ -1,0 +1,74 @@
+.ui-state-default .ui-icon {
+    background-image: url("images/ui-icons_228ef1_256x240.png");
+}
+
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    font-weight: bold;
+    color: #1c94c4;
+}
+
+ul.tagit {
+    padding: 1px 12px;
+}
+.ui-widget-content{
+	background: #FFFFFF;
+}
+
+.CodeMirror {
+    max-height: 312px;
+}
+
+.CodeMirror-scroll,.CodeMirror-vscrollbar{
+	max-height:312px; 
+}
+.editor-wrapper {
+	max-height:360px; 
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.editor-preview{
+	position:static;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;	
+}
+
+.CodeMirror-scroll {
+	margin-left: 10px;
+	margin-top: 5px;
+
+}
+.editor-toolbar{
+	padding: 0 10px;
+}
+
+
+.image-upload-modal-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.image-upload-modal-body .form-group{
+    margin-bottom: 50px;
+}
+.image-upload-modal-footer{
+    text-align: center;
+    margin-top: 0px;
+}
+.image-local-loading img{
+    padding: 0 8px;
+    width: 75%;
+}
