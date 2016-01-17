@@ -27,16 +27,6 @@
 > pjax 请求响应使用 [jacobbennett/pjax](https://github.com/JacobBennett/pjax)；
 
 
-##图片展示##
-
-**首页内容**
-
-![](http://laravel.luckybird.me/upload/images/201511/22/1/900X337.18546132339_hF9sZVjldn.png)
-
-**编辑界面**
-
-![](http://laravel.luckybird.me/upload/images/201511/22/1/900X752.62615859938_Y7X3wb3ljj.png)
-
 
 ##安装方法##
 
