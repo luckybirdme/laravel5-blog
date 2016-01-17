@@ -69,7 +69,7 @@ DB_PASSWORD=123456
 
 [https://github.com/luckybirdme/laravel5-learn-blog](https://github.com/luckybirdme/laravel5-learn-blog)
 
-##感谢阅读##
+##备注##
 
 * 如果对本项目有疑问，可查看我的学习记录，博客地址：[luckybird](http://www.luckybird.me)
-* 如果本项目对你有帮助，请不要吝啬你的评论和点赞，最后感谢你的阅读！
+* 如果本项目对你有帮助，不妨点个赞吧！
