@@ -62,4 +62,3 @@ DB_PASSWORD=123456
 ##备注##
 
 * 如果对本项目有疑问，可查看我的学习记录，博客地址：[luckybird](http://www.luckybird.me)
-* 如果本项目对你有帮助，不妨点个赞吧！
