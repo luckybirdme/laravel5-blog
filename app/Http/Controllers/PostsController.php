@@ -390,37 +390,46 @@ class PostsController extends Controller
         if($request->hasFile('imageLocalInput')){
             $file = $request->file('imageLocalInput');
             $fileName        = $file->getClientOriginalName();
-            $extension       = $file->getClientOriginalExtension() ?: 'png';
-            $folderName      = '/upload/images/' . date("Ym", time()) .'/'.date("d", time()) .'/'. Auth::user()->id.'/';
-
-            $destinationPath = public_path() . $folderName;
-            $safeName        = str_random(10).'.'.$extension;
-
-            $localFullPath   = $destinationPath . $safeName;
-            $httpFullPath    = route('home') . $folderName . $safeName;
-
-            $file->move($destinationPath, $safeName);
-
-            $img = Image::make($localFullPath);
-
-            $height = $img->height();
-            $width = $img->width();
-
-            if($width > 900){
-                $resize_width = 900;
-                $resize_heigth = $height*900/$width;
-
-                $resize_safeName = $resize_width."X".$resize_heigth."_".$safeName;
-                $resize_localFullPath = $destinationPath.$resize_safeName;
-                $img->resize($resize_width, $resize_heigth)->save($resize_localFullPath);
-
-                $httpFullPath = route('home') . $folderName . $resize_safeName;
-
+            $ext_array = array(
+                'png',
+                'jpg',
+                'jpeg',
+                'gif');
+                
+            $extension       = $file->getClientOriginalExtension();
+            if(in_array($extension, $ext_array)){
+                $folderName      = '/upload/images/' . date("Ym", time()) .'/'.date("d", time()) .'/'. Auth::user()->id.'/';
+    
+                $destinationPath = public_path() . $folderName;
+                $safeName        = str_random(10).'.'.$extension;
+    
+                $localFullPath   = $destinationPath . $safeName;
+                $httpFullPath    = route('home') . $folderName . $safeName;
+    
+                $file->move($destinationPath, $safeName);
+    
+                $img = Image::make($localFullPath);
+    
+                $height = $img->height();
+                $width = $img->width();
+    
+                if($width > 900){
+                    $resize_width = 900;
+                    $resize_heigth = $height*900/$width;
+    
+                    $resize_safeName = $resize_width."X".$resize_heigth."_".$safeName;
+                    $resize_localFullPath = $destinationPath.$resize_safeName;
+                    $img->resize($resize_width, $resize_heigth)->save($resize_localFullPath);
+    
+                    $httpFullPath = route('home') . $folderName . $resize_safeName;
+    
+                }
+    
+                $data['file_path'] = $httpFullPath;
+                $data['msg'] = "Succeeded!";
+                $data['success'] = true;                
             }
 
-            $data['file_path'] = $httpFullPath;
-            $data['msg'] = "Succeeded!";
-            $data['success'] = true;
         }
         
         return $data;
