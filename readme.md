@@ -1,6 +1,6 @@
-##laravel5-learn-blog##
+##laravel5-blog##
 
-最近学习laravel框架，以此搭建了简单的博客，分享出来供学习之用！
+最近学习laravel框架，以此搭建了简单的博客！
 演示地址：[Demo](http://laravel.luckybird.me)
 
 **功能介绍**
