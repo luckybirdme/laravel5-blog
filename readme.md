@@ -32,7 +32,7 @@
 
 **下载源码**
 ```
-git clone https://github.com/luckybirdme/laravel5-learn-blog.git
+git clone https://github.com/luckybirdme/laravel5-blog.git
 
 ```
 
@@ -57,7 +57,7 @@ DB_PASSWORD=123456
 
 ##源码地址##
 
-[https://github.com/luckybirdme/laravel5-learn-blog](https://github.com/luckybirdme/laravel5-learn-blog)
+[https://github.com/luckybirdme/laravel5-blog](https://github.com/luckybirdme/laravel5-blog)
 
 ##备注##
 
